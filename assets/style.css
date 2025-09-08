@@ -1,0 +1,34 @@
+:root {
+  --bg: #0b0d12;
+  --bg2: #121624;
+  --text: #E6E8EE;
+  --accent: #FF2E88;
+  --accent-2: #7C3AED;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.navbar.bg-gradient, footer.bg-gradient {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.hero {
+  background: radial-gradient(circle at top left, rgba(255,46,136,.25), transparent 60%);
+  min-height: 60vh;
+}
+
+.section-title {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.pill {
+  background: #161A2A;
+  padding: .75rem 1rem;
+  border-radius: 999px;
+  text-align: center;
+}
