@@ -33,6 +33,7 @@ body {
   text-align: center;
 }
 
+/* Certificate section for badge */
 .section-certifications { padding: 4rem 1rem; }
 .section-certifications .section-title { margin: 0 0 1.25rem; font-size: clamp(1.25rem, 2vw, 1.75rem); }
 
@@ -78,6 +79,8 @@ body {
 .cert-meta strong { display: block; font-size: 1rem; line-height: 1.2; }
 .cert-meta small { display: block; opacity: .75; margin-top: .15rem; }
 
+
+/* Abit of transition for the About page */
 .fade-in-up {
   opacity: 0;
   transform: translateY(30px);
@@ -88,3 +91,24 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* email me button for Contact */
+.btn-accent {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: var(--accent-2);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
