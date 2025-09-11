@@ -32,3 +32,59 @@ body {
   border-radius: 999px;
   text-align: center;
 }
+
+.section-certifications { padding: 4rem 1rem; }
+.section-certifications .section-title { margin: 0 0 1.25rem; font-size: clamp(1.25rem, 2vw, 1.75rem); }
+
+.certs-wrap { max-width: 1100px; margin: 0 auto; }
+.certs-grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.cert-item { display: contents; } /* let the card control layout */
+
+.cert-card {
+  display: grid; grid-template-columns: auto 1fr; align-items: center;
+  gap: .9rem; padding: 1rem;
+  border: 1px solid color-mix(in oklab, currentColor 15%, transparent);
+  border-radius: 14px; text-decoration: none; transition: transform .18s ease, box-shadow .18s ease;
+  background: color-mix(in oklab, white 90%, transparent);
+}
+@media (prefers-color-scheme: dark) {
+  .cert-card { background: color-mix(in oklab, black 80%, transparent); }
+}
+
+.cert-card:hover, .cert-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(0,0,0,.08);
+}
+
+.cert-badge {
+  width: 64px; height: 64px; object-fit: contain; flex: 0 0 auto;
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,.06));
+}
+
+/* Text fallback “chip” (shows if image fails) */
+.cert-chip {
+  display: none;
+  align-items: center; justify-content: center;
+  width: 64px; height: 64px; border-radius: 50%;
+  font-weight: 700; letter-spacing: .5px;
+  border: 2px solid currentColor;
+}
+
+.cert-meta strong { display: block; font-size: 1rem; line-height: 1.2; }
+.cert-meta small { display: block; opacity: .75; margin-top: .15rem; }
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
