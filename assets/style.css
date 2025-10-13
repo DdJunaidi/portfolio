@@ -33,7 +33,6 @@ body {
   text-align: center;
 }
 
-/* Certificate section for badge */
 .section-certifications { padding: 4rem 1rem; }
 .section-certifications .section-title { margin: 0 0 1.25rem; font-size: clamp(1.25rem, 2vw, 1.75rem); }
 
@@ -79,8 +78,6 @@ body {
 .cert-meta strong { display: block; font-size: 1rem; line-height: 1.2; }
 .cert-meta small { display: block; opacity: .75; margin-top: .15rem; }
 
-
-/* Abit of transition for the About page */
 .fade-in-up {
   opacity: 0;
   transform: translateY(30px);
@@ -92,7 +89,6 @@ body {
   transform: translateY(0);
 }
 
-/* email me button for Contact */
 .btn-accent {
   background-color: var(--accent);
   color: #fff;
@@ -112,3 +108,47 @@ body {
   transform: translateY(-2px);
 }
 
+#skills h5 { font-weight: 700; opacity: .9; }
+
+/* ──────────────────────────────────────────────────────────────
+   SKILLS SECTION (for <section id="skills">…</section>)
+   Maps to:
+   - <div class="skills-grid"> inside each tab-pane (skills layout)
+   - <span class="pill"> items inside the skills grid (category chips)
+   - <ul class="nav nav-pills"> tabs above the grids (category tabs)
+   ────────────────────────────────────────────────────────────── */
+
+/* Grid layout for the lists of skills inside each tab-pane:
+   index.html → <div class="skills-grid"> … <span class="pill">… */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: .6rem;
+}
+
+/* Skills-specific pill styling (does NOT change pills elsewhere):
+   index.html → <section id="skills"> … <span class="pill">… */
+#skills .pill {
+  display: inline-block;
+  padding: .5rem .8rem;      /* tighter than global .pill */
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+}
+
+/* Tab buttons for the category switcher:
+   index.html → <ul class="nav nav-pills"> … <button class="nav-link"> */
+.nav-pills .nav-link {
+  border-radius: 999px;
+  padding: .4rem .9rem;
+}
+
+/* Quick facts card (About section) */
+.card-quickfacts{
+  background:#111522;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;
+}
