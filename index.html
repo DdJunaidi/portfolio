@@ -53,26 +53,79 @@
     <!-- ABOUT -->
     <section id="about" class="py-5 section fade-in-up">
       <div class="container">
-        <h2 class="section-title">About</h2>
-        <p>
-      I am a <strong>Full Stack Web Developer</strong> with a unique foundation of
-      <strong>10+ years in technical, safety, and operational leadership</strong> across maritime,
-      manufacturing, and defense sectors. Recently, I earned the
-      <strong>Professional Diploma in Full Stack Web Development (SCTP)</strong> at Lithan Academy,
-      where I honed modern web technologies—<strong>Django, MySQL, JavaScript, and responsive design</strong>.
-    </p>
-    <p>
-      My cross-industry background means I excel at
-      <strong>complex problem-solving, risk-aware project planning, and Agile collaboration</strong>.
-      Certified in <strong>CSM, CSPO</strong>, and <strong>PMI Talking to AI: Prompt Engineering</strong>,
-      I bring a rare mix of engineering discipline, user-centric design thinking,
-      and the ability to leverage <strong>Generative AI</strong> to build efficient, future-ready solutions.
-    </p>
+        <div class="row g-4 align-items-stretch">
+          <!-- Left: narrative -->
+          <div class="col-lg-7">
+            <h2 class="section-title">About</h2>
+            <p class="mb-3">
+              I’m a <strong>Full Stack Web Developer</strong> with a foundation of
+              <strong>10+ years in technical, safety, and operational leadership</strong> across maritime,
+              manufacturing, and defense. I recently completed the
+              <strong>Professional Diploma in Full-Stack Web Development (SCTP)</strong> at Lithan Academy,
+              focusing on <strong>Django, React, MySQL</strong>, and <strong>responsive UI</strong>.
+            </p>
+            <p class="mb-3">
+              I bring <strong>risk-aware planning</strong>, <strong>Agile collaboration</strong> (CSM, CSPO),
+              and <strong>user-centric design thinking</strong>. I also apply <strong>Generative AI</strong>
+              where it adds real value (requirements generation, content summarization, smart search).
+            </p>
+
+            <ul class="mb-4">
+              <li>Comfortable shipping <strong>end-to-end</strong>: DB schema → API → React UI → deploy.</li>
+              <li>Bias for clean code, readable docs, and pragmatic testing.</li>
+              <li>Enjoy building tools that help <strong>teams move faster with confidence</strong>.</li>
+            </ul>
+
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-accent" href="#projects">See my work</a>
+              <a class="btn btn-outline-light" href="https://github.com/ddjunaidi" target="_blank">GitHub</a>
+              <a class="btn btn-outline-light" href="https://www.linkedin.com/in/junaidi-samsudin-24034462/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+
+          <!-- Right: quick facts card -->
+          <div class="col-lg-5">
+            <div class="p-3 h-100 card-quickfacts">
+              <h3 class="h5 fw-bold mb-3">Quick facts</h3>
+
+              <div class="mb-3 small text-white-50">Core stack</div>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="pill">Django</span>
+                <span class="pill">DRF</span>
+                <span class="pill">React</span>
+                <span class="pill">MySQL</span>
+                <span class="pill">Python</span>
+                <span class="pill">JavaScript</span>
+              </div>
+
+              <div class="mb-3 small text-white-50">Latest project</div>
+              <div class="mb-3">
+                <strong>HopeHands — Volunteer Management</strong>
+                <p class="mb-2 small">
+                  Capture applications, admin approve/reject, CSV bulk import, and
+                  <strong>HubSpot upsert</strong> on approval. Analytics stored in MySQL; admin secured with <strong>JWT</strong>.
+                </p>
+                <a class="btn btn-sm btn-primary me-2" href="https://github.com/DdJunaidi/hopehands" target="_blank">Repo</a>
+                <a class="btn btn-sm btn-outline-secondary" href="#projects">Details</a>
+              </div>
+
+              <div class="mb-3 small text-white-50">Certifications</div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="pill">CSM</span>
+                <span class="pill">CSPO</span>
+                <span class="pill">PMI: Prompt Engineering</span>
+                <span class="pill">PMI: GenAI Overview</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+
+    <!-- CERTIFICATIONS -->
     <section id="certifications" class="section-certifications">
-  <div class="certs-wrap">
+    <div class="certs-wrap">
     <h2 class="section-title">Certifications</h2>
 
     <ul class="certs-grid">
@@ -149,36 +202,165 @@
           </span>
         </a>
       </li>
-    </ul>
-  </div>
-</section>
+      </ul>
+    </div>
+    </section>
 
-    <!-- SKILLS -->
+    <!-- SKILLS (Tabbed) -->
     <section id="skills" class="py-5 section alt">
       <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="row g-3">
-          <div class="col-6 col-md-3"><div class="pill">Python</div></div>
-          <div class="col-6 col-md-3"><div class="pill">Django</div></div>
-          <div class="col-6 col-md-3"><div class="pill">MySQL</div></div>
-          <div class="col-6 col-md-3"><div class="pill">Bootstrap</div></div>
-          <div class="col-6 col-md-3"><div class="pill">HTML</div></div>
-          <div class="col-6 col-md-3"><div class="pill">CSS</div></div>
-          <div class="col-6 col-md-3"><div class="pill">JavaScript</div></div>
-<!--           <div class="col-6 col-md-3"><div class="pill">Bootstrap</div></div> -->
+        <h2 class="section-title mb-3">Skills</h2>
+
+        <!-- Core stack at-a-glance -->
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <span class="badge bg-primary">Django</span>
+          <span class="badge bg-primary">React</span>
+          <span class="badge bg-primary">MySQL</span>
+          <span class="badge bg-primary">Python</span>
+          <span class="badge bg-primary">JavaScript</span>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-pills flex-wrap gap-2 mb-3" id="skillsTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-languages" type="button" role="tab">Languages</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-frameworks" type="button" role="tab">Frameworks</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-databases" type="button" role="tab">Databases</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-security" type="button" role="tab">Security</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-testing" type="button" role="tab">Testing</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-tools" type="button" role="tab">Tools</button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <!-- Languages -->
+          <div class="tab-pane fade show active" id="tab-languages" role="tabpanel">
+            <div class="skills-grid">
+              <span class="pill">Python</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">SQL</span>
+            </div>
+          </div>
+
+          <!-- Frameworks -->
+          <div class="tab-pane fade" id="tab-frameworks" role="tabpanel">
+            <div class="skills-grid">
+              <span class="pill">Django</span>
+              <span class="pill">Django REST Framework</span>
+              <span class="pill">React</span>
+              <span class="pill">Bootstrap</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="tab-pane fade" id="tab-databases" role="tabpanel">
+            <div class="skills-grid">
+              <span class="pill">MySQL</span>
+              <span class="pill">SQLite</span>
+            </div>
+          </div>
+
+          <!-- Security -->
+          <div class="tab-pane fade" id="tab-security" role="tabpanel">
+            <div class="skills-grid">
+              <span class="pill">JWT (SimpleJWT)</span>
+              <span class="pill">CORS</span>
+              <span class="pill">HTTPS &amp; .env</span>
+            </div>
+          </div>
+
+          <!-- Testing -->
+          <div class="tab-pane fade" id="tab-testing" role="tabpanel">
+            <div class="skills-grid">
+              <span class="pill">Pytest</span>
+              <span class="pill">Vitest/Jest</span>
+              <span class="pill">Lighthouse</span>
+              <span class="pill">Locust</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="tab-pane fade" id="tab-tools" role="tabpanel">
+            <div class="skills-grid">
+              <span class="pill">Git &amp; GitHub</span>
+              <span class="pill">VS Code</span>
+              <span class="pill">HubSpot API</span>
+              <span class="pill">npm</span>
+              <span class="pill">Vite/Parcel</span>
+              <span class="pill">Postman</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    
 
     <!-- PROJECTS -->
     <section id="projects" class="py-5 section">
       <div class="container">
         <h2 class="section-title">Projects</h2>
         <div class="row g-4">
-          
-          <!-- Project 1: Silent Library (Django) -->
+
+          <!-- Project 3: HopeHands (Django + React) -->
+          <div class="col-md-6">
+            <div class="card project p-3 h-100">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 fw-bold m-0">HopeHands — Volunteer Management</h3>
+                <span class="badge bg-warning text-dark">Django • DRF • React</span>
+              </div>
+
+              <img src="assets/hopehands-thumb.jpg" class="img-fluid rounded mb-3" alt="HopeHands screenshot" onerror="this.style.display='none'"/>
+
+              <p>
+                Full-stack app for a charity to capture volunteer applications, let admins
+                approve/reject, bulk import CSVs, and sync approved contacts to HubSpot.
+                Approved contacts are upserted to HubSpot; extra analytics fields are
+                stored in MySQL. Admin actions are secured with JWT.
+              </p>
+
+              <ul class="small mb-3">
+                <li>Django REST API (JWT via SimpleJWT), CORS</li>
+                <li>React SPA for admin review & approvals</li>
+                <li>CSV bulk import (idempotent on email)</li>
+                <li>MySQL for analytics fields</li>
+                <li>HubSpot Private App Token integration</li>
+              </ul>
+
+              <!-- badges row -->
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge bg-dark">Django</span>
+                <span class="badge bg-dark">DRF</span>
+                <span class="badge bg-dark">React</span>
+                <span class="badge bg-dark">MySQL</span>
+                <span class="badge bg-dark">JWT</span>
+                <span class="badge bg-dark">CSV Import</span>
+                <span class="badge bg-dark">HubSpot API</span>
+              </div>
+
+              <div class="d-flex gap-2 flex-wrap">
+                <!-- If you kept a monorepo, link that; otherwise split FE/BE repos -->
+                <a class="btn btn-primary btn-sm" href="https://github.com/DdJunaidi/hopehands" target="_blank">Repo</a>
+                <!-- Optional separate repos:
+                <a class="btn btn-primary btn-sm" href="https://github.com/DdJunaidi/hopehands-backend" target="_blank">Backend</a>
+                <a class="btn btn-outline-primary btn-sm" href="https://github.com/DdJunaidi/hopehands-frontend" target="_blank">Frontend</a>
+                -->
+                <a class="btn btn-outline-secondary btn-sm" href="#" target="_blank" aria-disabled="true">Live Demo (soon)</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Silent Library (Django) -->
           <div class="col-md-6">
             <div class="card project p-3 h-100">
               <div class="d-flex justify-content-between align-items-start mb-2">
@@ -193,7 +375,7 @@
             </div>
           </div>
     
-          <!-- Project 2: Silent Library (Static) -->
+          <!-- Project 1: Silent Library (Static) -->
           <div class="col-md-6">
             <div class="card project p-3 h-100">
               <div class="d-flex justify-content-between align-items-start mb-2">
@@ -229,24 +411,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/script.js"></script>
     <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('.fade-in-up');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.2 });
+      document.addEventListener('DOMContentLoaded', () => {
+        const elements = document.querySelectorAll('.fade-in-up');
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.2 });
 
-    elements.forEach(el => observer.observe(el));
-  });
-</script>
+        elements.forEach(el => observer.observe(el));
+      });
+    </script>
   </body>
 </html>
-
-
 
 
 
