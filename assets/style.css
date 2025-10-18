@@ -152,3 +152,35 @@ body {
   border:1px solid rgba(255,255,255,.08);
   border-radius:14px;
 }
+
+.project .meta {
+  display: flex;                 /* lay items in a row */
+  gap: .5rem;                    /* space between pills */
+  align-items: center;           /* center vertically */
+  flex-wrap: wrap;               /* wrap on small screens */
+  font-size: .875rem;            /* slightly smaller text */
+  margin: .25rem 0 1rem;         /* small offset from heading */
+}
+
+/* Date pill: bright brand color for quick visual cue */
+.pill-date {
+  background: #0d6efd;           /* Bootstrap primary-ish */
+  color: #fff;
+  padding: .15rem .5rem;
+  border-radius: 999px;          /* rounded “pill” */
+  font-weight: 600;
+}
+
+/* Status pill: neutral gray by default (use other bg-* classes if needed) */
+.pill-status {
+  background: #6c757d;           /* Bootstrap secondary-ish */
+  color: #fff;
+  padding: .15rem .5rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+ /* Optional: variants if you want different statuses (uncomment to use) */
+.pill-status--active { background: #198754; }   /* green */
+.pill-status--paused { background: #fd7e14; }   /* orange */
+.pill-status--planned { background: #0dcaf0; }  /* cyan */
